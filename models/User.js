@@ -59,14 +59,14 @@ const userSchema = new Schema(
       {
         title: String,
         company: String,
-        description: String,
+        // description: String,
       },
     ],
     education: [
       {
         degree: String,
         school: String,
-        description: String,
+        // description: String,
       },
     ],
     appliedJobs: [

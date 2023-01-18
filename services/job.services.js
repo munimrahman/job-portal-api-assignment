@@ -1,13 +1,19 @@
-exports.postJobService = async () => {
-  return "Post Job Services";
+const JobPost = require("../models/JobPost");
+
+exports.postJobService = async (data) => {
+  const result = await JobPost.create(data);
+  return result;
 };
 
 exports.getAllJobService = async () => {
-  return "Get All Job Services";
+  const jobs = await JobPost.find({});
+  const jobsCount = await JobPost.countDocuments({});
+  return { jobs, jobsCount };
 };
 
-exports.getJobByIdService = async () => {
-  return "Get Job By ID Services";
+exports.getJobByIdService = async (jobId) => {
+  const job = await JobPost.findById(jobId);
+  return job;
 };
 
 exports.updateJobService = async () => {

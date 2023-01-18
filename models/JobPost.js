@@ -13,7 +13,7 @@ const jobPostSchema = new Schema({
     type: String,
     required: true,
     minLength: [10, "Description must be at least 10 characters"],
-    maxLength: [40, "Description is too long"],
+    maxLength: [500, "Description is too long"],
   },
   location: {
     type: String,
@@ -25,20 +25,15 @@ const jobPostSchema = new Schema({
   },
   salary: {
     type: Number,
+    required: true,
   },
   experience: {
     type: String,
-    required: true,
   },
   skills: {
     type: [String],
     required: true,
   },
-  employmentType: {
-    type: String,
-    required: true,
-  },
-  jobFunctions: [String],
   industry: [String],
   postingDate: {
     type: Date,

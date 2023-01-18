@@ -1,0 +1,135 @@
+[
+  {
+    "name": "Sakib Al Hasan",
+    "email": "sakib@gmail.com",
+    "password": "Hridoy_2091",
+    "confirmPassword": "Hridoy_2091",
+    "skills": ["React", "JavaScript", "NOdejs", "Redux"],
+    "experience": [
+      {
+        "title": "MERN Stack Developer",
+        "company": "ABC IT Company"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Computer Science & Engineering",
+        "school": "ABC University"
+      }
+    ]
+  },
+  {
+    "name": "John Doe",
+    "email": "johndoe1@gmail.com",
+    "password": "Hridoy_2019",
+    "confirmPassword": "Hridoy_2019",
+    "skills": ["Java", "Spring", "Hibernate"],
+    "experience": [
+      {
+        "title": "Java Developer",
+        "company": "XYZ Inc."
+      }
+    ],
+    "education": [
+      {
+        "degree": "Computer Science",
+        "school": "University of XYZ"
+      }
+    ]
+  },
+  {
+    "name": "Jane Smith",
+    "email": "janesmith@gmail.com",
+    "password": "Hridoy_2019",
+    "confirmPassword": "Hridoy_2019",
+    "skills": ["JavaScript", "Node.js", "React"],
+    "experience": [
+      {
+        "title": "Front-end Developer",
+        "company": "ABC Corp."
+      }
+    ],
+    "education": [
+      {
+        "degree": "Web Development",
+        "school": "Code School"
+      }
+    ]
+  },
+  {
+    "name": "Emily Brown",
+    "email": "emilybrown@gmail.com",
+    "password": "Hridoy_2019",
+    "confirmPassword": "Hridoy_2019",
+    "skills": ["Python", "Django", "Flask"],
+    "experience": [
+      {
+        "title": "Full Stack Developer",
+        "company": "DEF Corp."
+      }
+    ],
+    "education": [
+      {
+        "degree": "Computer Engineering",
+        "school": "University of DEF"
+      }
+    ]
+  },
+  {
+    "name": "Jacob Miller",
+    "email": "jacobmiller@gmail.com",
+    "password": "Hridoy_2019",
+    "confirmPassword": "Hridoy_2019",
+    "skills": ["C++", "OpenCV", "Machine Learning"],
+    "experience": [
+      {
+        "title": "Computer Vision Engineer",
+        "company": "GHI Corp."
+      }
+    ],
+    "education": [
+      {
+        "degree": "Electrical Engineering",
+        "school": "University of GHI"
+      }
+    ]
+  },
+  {
+    "name": "Karen Williams",
+    "email": "karenwilliams@gmail.com",
+    "password": "Hridoy_2019",
+    "confirmPassword": "Hridoy_2019",
+    "skills": ["C#", ".NET", "Azure"],
+    "experience": [
+      {
+        "title": "Full Stack Developer",
+        "company": "MNO Inc."
+      }
+    ],
+    "education": [
+      {
+        "degree": "Computer Science",
+        "school": "University of MNO"
+      }
+    ]
+  },
+  {
+    "name": "Michael Johnson",
+    "email": "michaeljohnson@gmail.com",
+    "password": "Hridoy_2019",
+    "confirmPassword": "Hridoy_2019",
+    "skills": ["PHP", "Laravel", "MySQL"],
+    "experience": [
+      {
+        "title": "PHP Developer",
+        "company": "PQR Inc."
+      }
+    ],
+    "education": [
+      {
+        "degree": "Computer Science",
+        "school": "University of PQR"
+      }
+    ]
+  }
+]

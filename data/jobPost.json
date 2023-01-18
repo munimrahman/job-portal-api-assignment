@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Java Developer",
+    "description": "We are looking for a Java Developer to join our team. The ideal candidate should have experience with Java, Spring, and Hibernate.",
+    "location": "New York",
+    "company": "ABC Inc.",
+    "salary": 100000,
+    "experience": "5 years",
+    "skills": ["Java", "Spring", "Hibernate"],
+    "industry": ["Technology"],
+    "deadline": "01/20/2023",
+    "hiring-manager": "Tamim Iqbal"
+  },
+  {
+    "title": "Front-end Developer",
+    "description": "We are seeking a Front-end Developer to join our team. The ideal candidate should have experience with JavaScript, React, and CSS.",
+    "location": "Los Angeles",
+    "company": "DEF Corp.",
+    "salary": 90000,
+    "experience": "3 years",
+    "skills": ["JavaScript", "React", "CSS"],
+    "industry": ["Technology"],
+    "deadline": "02/15/2023",
+    "hiring-manager": "Taskin Ahamde"
+  },
+  {
+    "title": "Data Scientist",
+    "description": "We are in need of a Data Scientist to join our team. The ideal candidate should have experience with Python, Machine Learning, and Data Analysis.",
+    "location": "Chicago",
+    "company": "GHI Inc.",
+    "salary": 120000,
+    "experience": "6 years",
+    "skills": ["Python", "Machine Learning", "Data Analysis"],
+    "industry": ["Technology"],
+    "deadline": "03/05/2023",
+    "hiring-manager": "Tamim Iqbal"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "description": "We are looking for a Full Stack Engineer to join our team. The ideal candidate should have experience with Node.js, Express, and MongoDB.",
+    "location": "Houston",
+    "company": "JKL Corp.",
+    "salary": 110000,
+    "experience": "4 years",
+    "skills": ["Node.js", "Express", "MongoDB"],
+    "industry": ["Technology"],
+    "deadline": "04/10/2023",
+    "hiring-manager": "Rubel Hossain"
+  },
+  {
+    "title": "DevOps Engineer",
+    "description": "We are seeking a DevOps Engineer to join our team. The ideal candidate should have experience with AWS, Docker, and Ansible.",
+    "location": "Philadelphia",
+    "company": "MNO Inc.",
+    "salary": 130000,
+    "experience": "7 years",
+    "skills": ["AWS", "Docker", "Ansible"],
+    "industry": ["Technology"],
+    "deadline": "05/20/2023",
+    "hiring-manager": "Taskin Ahamed"
+  },
+  {
+    "title": "Product Manager",
+    "description": "We are seeking a Product Manager to join our team. The ideal candidate should have experience with Product Development, Marketing and should be able to lead the team.",
+    "location": "Seattle",
+    "company": "PQR Corp.",
+    "salary": 150000,
+    "experience": "8 years",
+    "skills": ["Product Development", "Marketing", "Leadership"],
+    "industry": ["Technology"],
+    "deadline": "06/30/2023",
+    "hiring-manager": "Tamim Iqbal"
+  }
+]

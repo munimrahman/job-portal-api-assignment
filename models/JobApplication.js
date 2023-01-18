@@ -3,26 +3,28 @@ const Schema = mongoose.Schema;
 
 const JobApplicationSchema = new Schema({
   candidate: {
-    type: Schema.Types.ObjectId,
-    ref: "Candidate",
+    name: String,
     required: true,
+    id: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+    },
   },
   job: {
     type: Schema.Types.ObjectId,
     ref: "JobPost",
-    required: true,
   },
-  coverLetter: {
-    type: String,
-  },
-  resume: {
-    type: String,
-  },
-  status: {
-    type: String,
-    enum: ["Applied", "Interview Scheduled", "Offered", "Hired", "Rejected"],
-    default: "Applied",
-  },
+  // coverLetter: {
+  //   type: String,
+  // },
+  // resume: {
+  //   type: String,
+  // },
+  // status: {
+  //   type: String,
+  //   enum: ["Applied", "Interview Scheduled", "Offered", "Hired", "Rejected"],
+  //   default: "Applied",
+  // },
   appliedDate: {
     type: Date,
     default: Date.now,
