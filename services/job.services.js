@@ -16,11 +16,14 @@ exports.getJobByIdService = async (jobId) => {
   return job;
 };
 
-exports.updateJobService = async () => {
-  return "Update Job Services";
+exports.updateJobService = async (jobId, updatedInfo) => {
+  const updatedJob = await JobPost.updateOne({ _id: jobId }, updatedInfo, {
+    runValidators: true,
+  });
+  return updatedJob;
 };
 
-exports.applyJobService = async () => {
+exports.applyJobService = async (jobId, applyData) => {
   return "Apply Job Services";
 };
 

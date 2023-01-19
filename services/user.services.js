@@ -1,5 +1,8 @@
-exports.signUpService = () => {
-  return "Sign Up Services";
+const User = require("../models/User");
+
+exports.signUpService = async (userData) => {
+  const result = await User.create(userData);
+  return result;
 };
 
 exports.logInService = () => {

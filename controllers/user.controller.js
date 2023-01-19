@@ -1,9 +1,21 @@
 const userServices = require("../services/user.services");
 
-exports.signUp = (req, res, next) => {
-  const result = userServices.signUpService();
-  console.log("Sign Up Route");
-  res.send(result);
+exports.signUp = async (req, res, next) => {
+  try {
+    const result = await userServices.signUpService(req.body);
+    res.status(500).send({
+      success: true,
+      message: "User Created Successfully",
+      data: result,
+    });
+    console.log("Sign Up Route");
+  } catch (error) {
+    res.status(500).send({
+      success: false,
+      message: "Can not create user",
+      error: error.message,
+    });
+  }
 };
 
 exports.logIn = (req, res, next) => {
