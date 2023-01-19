@@ -3,6 +3,7 @@ const cors = require("cors");
 const userRouter = require("./routes/user.route");
 const jobRouter = require("./routes/job.route");
 const adminRouter = require("./routes/admin.route");
+const managerRoute = require("./routes/manager.route");
 const app = express();
 
 app.use(cors());
@@ -13,7 +14,7 @@ app.get("/", (req, res) => {
 });
 
 // Routes
-app.use("/", userRouter, jobRouter, adminRouter);
+app.use("/", userRouter, jobRouter, managerRoute, adminRouter);
 
 app.all("*", (req, res) => {
   res.status(404).send("404 Not Found");

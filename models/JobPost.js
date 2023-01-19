@@ -44,8 +44,11 @@ const jobPostSchema = new Schema({
     required: true,
   },
   hiringManager: {
-    type: Schema.Types.ObjectId,
-    ref: "User",
+    name: String,
+    id: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+    },
   },
   applicants: [
     {

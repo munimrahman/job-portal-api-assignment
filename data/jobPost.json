@@ -9,7 +9,10 @@
     "skills": ["Java", "Spring", "Hibernate"],
     "industry": ["Technology"],
     "deadline": "01/20/2023",
-    "hiring-manager": "Tamim Iqbal"
+    "hiringManager": {
+      "name": "Tamim Iqbal",
+      "id": "63c95a4fcbf6e7264147b822"
+    }
   },
   {
     "title": "Front-end Developer",
@@ -21,7 +24,10 @@
     "skills": ["JavaScript", "React", "CSS"],
     "industry": ["Technology"],
     "deadline": "02/15/2023",
-    "hiring-manager": "Taskin Ahamde"
+    "hiringManager": {
+      "name": "Taskin Ahamde",
+      "id": "63c95d392fc7bef570f64139"
+    }
   },
   {
     "title": "Data Scientist",
@@ -33,7 +39,10 @@
     "skills": ["Python", "Machine Learning", "Data Analysis"],
     "industry": ["Technology"],
     "deadline": "03/05/2023",
-    "hiring-manager": "Tamim Iqbal"
+    "hiringManager": {
+      "name": "Tamim Iqbal",
+      "id": "63c95a4fcbf6e7264147b822"
+    }
   },
   {
     "title": "Full Stack Engineer",
@@ -45,7 +54,10 @@
     "skills": ["Node.js", "Express", "MongoDB"],
     "industry": ["Technology"],
     "deadline": "04/10/2023",
-    "hiring-manager": "Rubel Hossain"
+    "hiringManager": {
+      "name": "Mehedi Miraz",
+      "id": "63c95e6024f1c0e55fc7c5bf"
+    }
   },
   {
     "title": "DevOps Engineer",
@@ -57,7 +69,10 @@
     "skills": ["AWS", "Docker", "Ansible"],
     "industry": ["Technology"],
     "deadline": "05/20/2023",
-    "hiring-manager": "Taskin Ahamed"
+    "hiringManager": {
+      "name": "Taskin Ahamed",
+      "id": "63c95d392fc7bef570f64139"
+    }
   },
   {
     "title": "Product Manager",
@@ -69,6 +84,9 @@
     "skills": ["Product Development", "Marketing", "Leadership"],
     "industry": ["Technology"],
     "deadline": "06/30/2023",
-    "hiring-manager": "Tamim Iqbal"
+    "hiringManager": {
+      "name": "Tamim Iqbal",
+      "id": "63c95a4fcbf6e7264147b822"
+    }
   }
 ]

@@ -1,7 +1,13 @@
 const JobPost = require("../models/JobPost");
+const User = require("../models/User");
 
 exports.postJobService = async (data) => {
   const result = await JobPost.create(data);
+  const hiringMangerId = result.hiringManager.id;
+  const hiringManager = await User.findById(hiringMangerId);
+  hiringManager.jobPostings.push(result.id);
+  const updatedHiringManagerJobPosting = await hiringManager.save();
+  console.log(updatedHiringManagerJobPosting);
   return result;
 };
 
