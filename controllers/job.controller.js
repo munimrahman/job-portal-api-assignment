@@ -71,7 +71,7 @@ exports.updateJob = async (req, res, next) => {
 
 exports.applyJob = async (req, res, next) => {
   try {
-    const result = await jobServices.applyJobService();
+    const result = await jobServices.applyJobService(req.params.id, req.body);
     console.log("Apply Job Route Working");
     res.status(200).send({
       success: true,

@@ -1,3 +1,4 @@
+const JobApplication = require("../models/JobApplication");
 const JobPost = require("../models/JobPost");
 const User = require("../models/User");
 
@@ -30,7 +31,17 @@ exports.updateJobService = async (jobId, updatedInfo) => {
 };
 
 exports.applyJobService = async (jobId, applyData) => {
-  return "Apply Job Services";
+  const result = await JobApplication.create(applyData);
+  console.log(jobId);
+  const updateCandidate = await User.findById(result.candidate.id);
+  updateCandidate.appliedJobs.push(result.id);
+  updateCandidate.save();
+
+  const updateJob = await JobPost.findById(jobId);
+  updateJob.applicants.push(result.id);
+  updateJob.save();
+
+  return result;
 };
 
 exports.getTop10AppliedJobService = async () => {

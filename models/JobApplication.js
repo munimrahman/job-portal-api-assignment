@@ -4,7 +4,6 @@ const Schema = mongoose.Schema;
 const JobApplicationSchema = new Schema({
   candidate: {
     name: String,
-    required: true,
     id: {
       type: Schema.Types.ObjectId,
       ref: "User",
