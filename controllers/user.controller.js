@@ -1,4 +1,5 @@
 const userServices = require("../services/user.services");
+const generateToken = require("../utils/generateToken");
 
 exports.signUp = async (req, res, next) => {
   try {
@@ -18,10 +19,51 @@ exports.signUp = async (req, res, next) => {
   }
 };
 
-exports.logIn = (req, res, next) => {
-  const result = userServices.logInService();
-  console.log("Log In Route");
-  res.send(result);
+exports.logIn = async (req, res, next) => {
+  try {
+    const { email, password } = req.body;
+    if (!email || !password) {
+      return res.status(400).send({
+        success: false,
+        message: "Please provide email and password",
+      });
+    }
+
+    const user = await userServices.findUserByEmail(email);
+
+    if (!user) {
+      return res.status(400).send({
+        success: false,
+        message: "Invalid email or password",
+      });
+    }
+
+    const isPasswordMatch = user.comparePassword(password, user.password);
+
+    if (!isPasswordMatch) {
+      return res.status(400).send({
+        success: false,
+        message: "Invalid email or password",
+      });
+    }
+
+    const token = generateToken(user);
+
+    res.status(200).send({
+      success: true,
+      message: "User Logged In Successfully",
+      data: {
+        token,
+        user,
+      },
+    });
+  } catch (error) {
+    res.status(401).send({
+      success: false,
+      message: "Can not log in",
+      error: error.message,
+    });
+  }
 };
 
 exports.getUserInfo = (req, res, next) => {
