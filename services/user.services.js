@@ -9,7 +9,3 @@ exports.findUserByEmail = async (email) => {
   const user = await User.findOne({ email });
   return user;
 };
-
-exports.getUserInfoService = () => {
-  return "Get User Info Services";
-};

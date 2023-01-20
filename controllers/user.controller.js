@@ -66,8 +66,18 @@ exports.logIn = async (req, res, next) => {
   }
 };
 
-exports.getUserInfo = (req, res, next) => {
-  const result = userServices.getUserInfoService();
-  console.log("Get User Info Route");
-  res.send(result);
+exports.getUserInfo = async (req, res, next) => {
+  try {
+    const result = await userServices.findUserByEmail(req.user.email);
+    res.status(200).send({
+      success: true,
+      data: result,
+    });
+  } catch (error) {
+    res.status(400).send({
+      success: false,
+      message: "Can not get user info",
+      error: error.message,
+    });
+  }
 };
