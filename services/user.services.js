@@ -9,3 +9,8 @@ exports.findUserByEmail = async (email) => {
   const user = await User.findOne({ email });
   return user;
 };
+
+exports.findUserByConfirmationToken = async (confirmationToken) => {
+  const user = await User.findOne({ confirmationToken });
+  return user;
+};

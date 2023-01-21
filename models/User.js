@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const validator = require("validator");
 const bcrypt = require("bcryptjs");
+const crypto = require("crypto");
 
 const userSchema = new Schema(
   {
@@ -121,6 +122,17 @@ userSchema.pre("save", function (next) {
 userSchema.methods.comparePassword = function (password, hash) {
   const isPasswordMatch = bcrypt.compareSync(password, hash);
   return isPasswordMatch;
+};
+
+userSchema.methods.generateConfirmationToken = function () {
+  const confirmationToken = crypto.randomBytes(20).toString("hex");
+  this.confirmationToken = confirmationToken;
+
+  const date = new Date();
+  date.setMinutes(date.getMinutes() + 2);
+  this.confirmationTokenExpires = date;
+
+  return confirmationToken;
 };
 
 module.exports = mongoose.model("User", userSchema);
